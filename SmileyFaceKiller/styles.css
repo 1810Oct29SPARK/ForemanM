@@ -1,0 +1,59 @@
+body {
+    background: black;
+    color: white;
+}
+nav {
+    font-family: cursive;
+    color: red;
+    font-size: 24px;
+    text-align: right;
+}
+p {
+    color:white;
+    text-indent: 45px;
+    font-family: 'Times New Roman', Times, serif;    
+}
+aside {
+    width: 50%;
+    border-left: 3px ridge grey;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 50px;
+    float: right;
+}
+article {
+    width: 30%;
+    padding: 5px;
+    float: left;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    border-width: 5px;
+}
+footer {
+    text-align: center;
+    
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+}   
+#main-view {
+    display: flex;
+    flex-direction: row;
+}
+section {
+    width: 30%;
+    float: left;
+}
+.intro {
+    margin: 40px;
+    padding: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 15px;
+}
+
