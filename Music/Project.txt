@@ -1,0 +1,8 @@
+Theme: Music
+1. Find your favorite Artist
+2. Find your favorite Song
+3. Find out when and where their next concert is
+4. Find your favorite Album
+5. Find Hotels for away concerts
+6. Find out where your favorite artist is on the charts
+7. Purchase Music
