@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music is Everything</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="musicStyles.css" />
+    <style>
+        #map {
+            height: 100%;
+        }
+        /* body{ background-image: url("concerts.jpg");
+    background-repeat: no-repeat;
+background-size: cover;} */
+        </style>
+          
+</head>
+<body>
+    <div id="map">
+            <script>
+            var map;
+            function initMap(){
+        map = new google.maps.Map(document.getElementById('map'), {
+
+        });
+            }</script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR_jP_kq0nataSn1FHLvCPi9RUrUUsZeM&callback=initMap"
+            type="text/javascript"></script>
+    </div>
+    <header>
+        <nav>
+            <a href="Artists.html">Artists</a>
+            <a href="Music.html">Music</a>
+            <a href="Concerts.html">Concerts</a>
+            <a href="Charts.html">Music Charts</a>
+        </nav>
+    </header>
+    <h1>Search For an Artist to Find their next Concert</h1>
+    <input type="text" placeholder="Search Artist Name">
+    <button type="button">Find the next concert</button>
+    
+
+    <footer>
+        <a href="#top">Back to top</a>
+        <p>By Malika Foreman<br>
+            2018
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    /* background-image: url("maxresdefault.jpg"); */
+    padding-bottom: 60px;
+}
+nav {
+    color: White;
+    font-size: 20px;
+    border: solid;
+    border-radius: 20px;
+    width: 28%;
+    text-align: center;
+    background: white;
+}
+h1 {
+    color: white;
+}
+div {
+    color: darkblue;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+}
