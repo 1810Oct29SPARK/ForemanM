@@ -1,5 +1,5 @@
 
-let artistToken = 'BQC22_s0Q1eEGhYRHFD7BLoJ5LEDqzuzdlroCaH0ZNJunRCfJwVpSftO66vU1XIEfue5j9CuxkB5iKo4gyWyBXYVVmgcWy0jl-7I33mYTz8AefaRIAq9iFwjGHo6lQUAd-SVLbxycqCe3na_pDCzQxswRSC5M0sTAK_pmsA2MApkXJKfb0FxzwDw6xw7mGiilwzncrSwxKUkB6wsuAyRgBIdPk_17GCUo1XCnydlx0nRbPAOnsB_j-yLtF8ZwuOGyeg';
+let artistToken = 'BQC-frHJFLByvGaM4GNZyVO_-aEGb8bOjt9Vc7asTeN3h2bj9lkOtIABQwW4Sw5el5dd_DDzGIGPi_MZnCJAJNGkzGT48bN3jw-73hKfGV0EHv6v3n-aKxTOjY8w4tMqXyWVoq1nDvZd86GYLgC2EePKEKU_WRWZ3nkp1sxISklAGcz0a5AypH0xmUiQGQQP_8D6kwfEI5jZO0cqvuJE4-sYV7ZTWFUbgAXk2tonxqtpE5_2rjyDIu2Ca1gsFc1eSBk';
 let apiUrl = 'https://api.spotify.com/v1/search?q=';
 let search2 = '&type=artist';
 
@@ -22,16 +22,10 @@ function searchForArtist() {
         function showArtist() {
             for (i=0; i<1; i++) {
                 let newArtist = document.createElement('p')
-                newArtist.innerText = 
-                album.artists.items[i].name; 
-                let linebreak = document.createElement("br") +
-                document.getElementById('artist-data').appendChild(linebreak);
-                album.artists.items[i].genres[0];
-                linebreak = document.createElement("br") +
-                document.getElementById('artist-data').appendChild(linebreak);
-                album.artists.items[i].followers.total;
-                linebreak = document.createElement("br") +
-                document.getElementById('artist-data').appendChild(linebreak);  
+                newArtist.innerText = 'Name:' + '   ' +
+                album.artists.items[i].name + '     ' + 'Genre: ' + '     ' +
+                album.artists.items[i].genres[0] + '    ' + 'Spotify Followers: ' + '    ' +
+                album.artists.items[i].followers.total + '      ' + 'Spotify URL: ' + '     ' +
                 album.artists.items[i].external_urls.spotify;
                 document.getElementById('artist-data').appendChild(newArtist); 
         }

@@ -8,26 +8,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="musicStyles.css" />
     <style>
         #map {
-            height: 100%;
+            height: 400px;
+            width: 100%;
         }
-        /* body{ background-image: url("concerts.jpg");
-    background-repeat: no-repeat;
-background-size: cover;} */
+         body{ background-color: blue;
+         }
         </style>
           
 </head>
 <body>
-    <div id="map">
-            <script>
-            var map;
-            function initMap(){
-        map = new google.maps.Map(document.getElementById('map'), {
-
-        });
-            }</script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR_jP_kq0nataSn1FHLvCPi9RUrUUsZeM&callback=initMap"
-            type="text/javascript"></script>
-    </div>
+    
     <header>
         <nav>
             <a href="Artists.html">Artists</a>
@@ -37,11 +27,34 @@ background-size: cover;} */
         </nav>
     </header>
     <h1>Search For an Artist to Find their next Concert</h1>
-    <input type="text" placeholder="Search Artist Name">
-    <button type="button">Find the next concert</button>
+    <input type="text" placeholder="Search Artist Name" id="ArtistName">
+    <button type="button" onclick="searchForConcert()">Find the next concert</button>
     
+    <h1>Google Maps</h1>
+    <div id="map">
+<script>
+    function initMap(){
+        //Map options
+        var options = {
+            zoom:8,
+            center: {lat:42.3601, lng:-71.0589}
+        }
 
-    <footer>
+        var map = new google.maps.Map(document.getElementById('map'), options);
+
+        //Marker
+        var marker = new google.maps.Marker({
+            postion: {lat:27.7634, lng:-82.5437},
+            map:map
+        });
+    }
+</script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWR1ro3ZZ-zlHWIMJRAFFr3nmc3GWgrZ4&callback=initMap"></script>
+    </div>
+    <br>
+    <br>
+ <script src="concerts.js"></script>
+    <footer style="position:relative">
         <a href="#top">Back to top</a>
         <p>By Malika Foreman<br>
             2018

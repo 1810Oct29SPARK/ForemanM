@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="musicStyles.css" />
     <style>
-        body{ background-image: url("blue.jpg");
+        body{ background-image: url("images/blue.jpg");
     }
         </style>
 </head>
@@ -22,20 +22,28 @@
     </header>
     <div>
         <h1 style="color: darkblue">Find your favorite Songs Or Albums</h1>
-    <input type="text" placeholder="Search Songs">
-    OR<br>
-    <input type="text" id="album" placeholder="Search Albums">
+    <input type="text" id='songs' placeholder="Search Songs">
+    <button type="button" onclick="searchForSong()">Search</button>
+    <br>
+    <input type="text" id="album1" placeholder="Search Artist for Albums">
     <button id="new-album-button" onclick="searchForAlbum()">Search</button>
+    <br>
+<section>
+    <div id="album-data"></div>
+</section>
+<aside>
+    <div id="song-data"></div>
+</aside>
     <script src="music.js"></script>
-    <div id="album-here"></div>
+
 </div>
-<div>
+<!-- <div>
         <br>
         <br>
-    <center><img src="albums.jpg"><br><img src="images (2).jpeg"><img src="images (1).jpeg"><img src="album3.jpeg"><img src="album4.jpeg"><img src="images.jpeg"></center>
-</div>
+    <center><img src="images/albums.jpg"><br><img src="images/images (2).jpeg"><img src="images/images (1).jpeg"><img src="images/album3.jpeg"><img src="images/album4.jpeg"><img src="images/images.jpeg"></center>
+</div> -->
     
-<footer style="position: relative;">
+<footer style="position: relative; margin-top:600px">
     <a href="#top">Back to top</a>
     <p>By Malika Foreman<br>
         2018
