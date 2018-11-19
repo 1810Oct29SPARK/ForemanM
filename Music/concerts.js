@@ -1,25 +1,26 @@
 
 
-let apiUrl = 'https://api.seatgeek.com/2/events?';
-let search2 = 'performers.slug=';
-let search3 = '&client_id=';
+search2='&q_track='
+search4= '&apikey=70ea37a0e320b3df3468bd08bb273fcd';
 
-function searchForConcert() {
-    let clientId = 'MTM5ODM2MDl8MTU0MjUwMDg2OC4zNw';
-    let clientSecret = '404770dc3427c9abbeabd2d4a1ced08c238830cc3810421c87ba4c96c49b33da';
-     let concert = document.getElementById('ArtistName').value;
-    fetch(apiUrl  + search2 + ArtistName + search3 + clientId, {method: "GET", required: "true"})
-    .then((response) => {
-        return response.json();
-    })
-    .then((data) => {
-        console.log(data);
-        concert = data;
-    })
-    .catch((error) => {
-        console.log(error);
-    });
 
+function searchForLyrics(){
+    let artist = document.getElementById('artist').value;
+    let track = document.getElementById('track').value;
+    var proxyUrl = 'https://cors-anywhere.herokuapp.com/',
+
+    apiUrl = 'https://api.musixmatch.com/ws/1.1/matcher.lyrics.get?format=json&callback=callback&q_artist=';
+    axios.get(proxyUrl + apiUrl + artist + search2 + track + search4)
+        .then((response) => {
+            console.log(response);
+            data = response;
+            console.log(data.data.message.body.lyrics.lyrics_body);
+            showLyrics();
+
+            function showLyrics() {
+                $('#lyric-data').append(`<pre>${data.data.message.body.lyrics.lyrics_body}</pre>`)
+            }
+        });
 }
 
 

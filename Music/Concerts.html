@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Music is Everything</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="musicStyles.css" />
     <style>
         #map {
@@ -22,37 +23,27 @@
         <nav>
             <a href="Artists.html">Artists</a>
             <a href="Music.html">Music</a>
-            <a href="Concerts.html">Concerts</a>
-            <a href="Charts.html">Music Charts</a>
+            <a href="Concerts.html">Lyrics</a>
         </nav>
     </header>
-    <h1>Search For an Artist to Find their next Concert</h1>
-    <input type="text" placeholder="Search Artist Name" id="ArtistName">
-    <button type="button" onclick="searchForConcert()">Find the next concert</button>
-    
-    <h1>Google Maps</h1>
-    <div id="map">
-<script>
-    function initMap(){
-        //Map options
-        var options = {
-            zoom:8,
-            center: {lat:42.3601, lng:-71.0589}
-        }
+    <h1>Search Lyrics to your favorite song!</h1>
+    <input type="text" placeholder="Search Artist Name" id="artist">
+    <input type="text" placeholder="Search Track" id="track">
+    <button type="button" onclick="searchForLyrics()">Search For Lyrics</button>
+    <br>
+    <br>
 
-        var map = new google.maps.Map(document.getElementById('map'), options);
-
-        //Marker
-        var marker = new google.maps.Marker({
-            postion: {lat:27.7634, lng:-82.5437},
-            map:map
-        });
-    }
-</script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWR1ro3ZZ-zlHWIMJRAFFr3nmc3GWgrZ4&callback=initMap"></script>
+    <div id="songDiv">
+    <div id="lyric-data"></div>
+</div>
     </div>
     <br>
     <br>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
  <script src="concerts.js"></script>
     <footer style="position:relative">
         <a href="#top">Back to top</a>

@@ -1,5 +1,5 @@
 
-let albumToken = 'BQC-frHJFLByvGaM4GNZyVO_-aEGb8bOjt9Vc7asTeN3h2bj9lkOtIABQwW4Sw5el5dd_DDzGIGPi_MZnCJAJNGkzGT48bN3jw-73hKfGV0EHv6v3n-aKxTOjY8w4tMqXyWVoq1nDvZd86GYLgC2EePKEKU_WRWZ3nkp1sxISklAGcz0a5AypH0xmUiQGQQP_8D6kwfEI5jZO0cqvuJE4-sYV7ZTWFUbgAXk2tonxqtpE5_2rjyDIu2Ca1gsFc1eSBk';
+let albumToken = 'BQAAj4CuNmvLvKa-vYf0hDmDtp5HYCYtYBSC9CLMOpLT1l0fBx-YhrCHmoWM8U2l4zPh04jjisLiHWEIoKGF5xb-2hPBSqXJk2qxGQ4x2yXgZK4NdQvo4kiiA_1TCuOWWApUcyQADdmY2tu09GPe926aVCK8pX0MA1vIOB8i9awgs4nqC1ms_poQFqhE6cQ6KKzF7zp8TBzR7Cp9ChchQecIzPsF2bCewetbXx8-iH-1mKtem_Kf-iIUkhbxpiWf5CU';
 let apiUrl = 'https://api.spotify.com/v1/search?q=';
 let search2 = '&type=album';
 
@@ -20,10 +20,10 @@ function searchForAlbum() {
         showAlbums();
         function showAlbums() {
             for(i = 0; i < data.albums.items.length; i++) {
-                let artistAlbum = document.createElement('div')
-                artistAlbum.innerText = data.albums.items[i].name + '       ' + '--' + data.albums.items[i].release_date;
-                document.getElementById('album-data').appendChild(artistAlbum);
-                console.log(data.albums.items[i].name);
+                $('#album-data').append(`<h5><br>${data.albums.items[i].name}</h5>`)
+                
+                $('#album-data').append(`<h6>${data.albums.items[i].release_date}</h6>`) 
+                
             }
             }
         })
@@ -47,11 +47,17 @@ let search3 = '&type=track';
         showSongs();
 
         function showSongs() {
-            for(i =0; i < data.tracks.items.length; i++) {
+            for(i =0; i < 10; i++) {
                 let artistSong = document.createElement('div')
-                artistSong.innerText = data.tracks.items[i].name + '        ' + '--' +
-                data.tracks.items[i].artists[0].name;
-                document.getElementById('song-data').appendChild(artistSong);
+                artistSong.innerText = 
+                
+                
+                $('#song-data').append(`<h3>${data.tracks.items[i].artists[0].name}</h3>`) 
+                
+                $('#song-data').append(`<h4>${data.tracks.items[i].name}</h4>`)
+
+                $('#song-data').append(`<pre><a href="${data.tracks.items[i].preview_url}"</a>Click Here to Preview Song</pre>`)
+       
             }
         }
     })
