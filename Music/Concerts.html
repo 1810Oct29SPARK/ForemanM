@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music is Everything</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="musicStyles.css" />
+    <style>
+         body{ background-color: blue;
+         }
+        </style>
+          
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="Artists.html">Artists</a>
+            <a href="Music.html">Music</a>
+            <a href="Concerts.html">Lyrics</a>
+        </nav>
+    </header>
+    <h1>Search Lyrics to your favorite song!</h1>
+    <input type="text" placeholder="Search Artist Name" id="artist" required="true">
+    <input type="text" placeholder="Search Track" id="track" required="true">
+    <button type="button" onclick="searchForLyrics()">Search For Lyrics</button>
+    <br>
+    <br>
+
+    <div id="songDiv">
+    <div id="lyric-data"></div>
+</div>
+    </div>
+    <br>
+    <div style="text-align:center">
+    <a href="https://www.songkick.com/"><h3>Click Here to Find the Next Upcoming Concerts of Your Favorite Artists!</h3></a>
+    <br>
+    <a href="https://www.amazon.com/MP3-Music-Download/b?ie=UTF8&node=163856011"><h4>Click Here to Buy Music</h4></a>
+</div>
+    <br>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+ <script src="concerts.js"></script>
+    <footer style="position:relative">
+        <a href="#top">Back to top</a>
+        <p>By Malika Foreman<br>
+            2018
+        </p>
+    </footer>
+</body>
+</html>

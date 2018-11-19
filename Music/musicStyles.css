@@ -1,0 +1,89 @@
+body {
+    padding-bottom: 60px;
+    background-color: black;
+    color:white;
+}
+nav {
+    color: White;
+    font-size: 20px;
+    border: solid;
+    border-radius: 20px;
+    width: 28%;
+    text-align: center;
+    background: white;
+}
+h1 {
+    color: white;
+}
+#data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#outside {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#o-d-sec{
+    max-width: 50%;
+    float: right;
+    padding: 0;
+}
+#o-d-asd{
+    padding: 0;
+    max-width: 50%;
+    float: left;
+}
+
+#artist-data {
+    color: white;
+    border: 5px;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 30px;
+    text-align: center;
+    width: 50%;
+    background-color: lightskyblue;
+    margin: 20px;
+    display: inline-block;
+}
+#album-data {
+    color: black;
+    border: 5px;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: white;
+    float: left;
+}
+#songDiv {
+    display: inline-block;
+    color: white;
+    border: solid;
+    border-radius: 30px;
+    background-color: aliceblue;
+    
+}
+#song-data {
+    color: black;
+    border: 5px;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 30px;
+    background-color: white;
+    /*width: 45%;*/
+    float: left;
+    flex-grow: 1;
+}
+section {
+    padding: 20px;
+    width: 50%;
+}
+footer {
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+}

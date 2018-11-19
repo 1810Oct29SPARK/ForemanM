@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Music is Everything</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="musicStyles.css" />
+    <style>
+        body{ background-image: url("images/blue.jpg");
+    }
+        </style>
+</head>
+<body>
+    <header id="top">
+        <nav>
+            <a href="Artists.html">Artists</a>
+            <a href="Music.html">Music</a>
+            <a href="Concerts.html">Lyrics</a>
+        </nav>
+    </header>
+    <div>
+        <h1 style="color: darkblue">Find your favorite Songs Or Albums</h1>
+    <input type="text" id='songs' placeholder="Search Songs" required="true">
+    <button type="button" onclick="searchForSong()">Search</button>
+    <br>
+    <input type="text" id="album1" placeholder="Search Artist for Albums" required="true">
+    <button id="new-album-button" onclick="searchForAlbum()">Search</button>
+    <br>
+    <br>
+    <div >
+        <div>
+            <section id="o-d-sec">
+                <div id="album-data"></div>
+            </section>
+            <aside id="o-d-asd">
+                <div id="song-data"></div>
+            </aside>
+        </div>
+    </div>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="music.js"></script>
+</div>
+  <div>
+<footer style="position: relative; margin-top:1000px; color: black">
+    <a href="#top">Back to top</a>
+    <p>By Malika Foreman<br>
+        2018
+    </p>
+</div>  
+</footer>
+</body>
+</html>
