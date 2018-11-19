@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="musicStyles.css" />
     <style>
-        #map {
-            height: 400px;
-            width: 100%;
-        }
          body{ background-color: blue;
          }
         </style>
@@ -27,8 +23,8 @@
         </nav>
     </header>
     <h1>Search Lyrics to your favorite song!</h1>
-    <input type="text" placeholder="Search Artist Name" id="artist">
-    <input type="text" placeholder="Search Track" id="track">
+    <input type="text" placeholder="Search Artist Name" id="artist" required="true">
+    <input type="text" placeholder="Search Track" id="track" required="true">
     <button type="button" onclick="searchForLyrics()">Search For Lyrics</button>
     <br>
     <br>
@@ -38,6 +34,11 @@
 </div>
     </div>
     <br>
+    <div style="text-align:center">
+    <a href="https://www.songkick.com/"><h3>Click Here to Find the Next Upcoming Concerts of Your Favorite Artists!</h3></a>
+    <br>
+    <a href="https://www.amazon.com/MP3-Music-Download/b?ie=UTF8&node=163856011"><h4>Click Here to Buy Music</h4></a>
+</div>
     <br>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script

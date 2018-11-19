@@ -1,5 +1,5 @@
 
-let artistToken = 'BQAAj4CuNmvLvKa-vYf0hDmDtp5HYCYtYBSC9CLMOpLT1l0fBx-YhrCHmoWM8U2l4zPh04jjisLiHWEIoKGF5xb-2hPBSqXJk2qxGQ4x2yXgZK4NdQvo4kiiA_1TCuOWWApUcyQADdmY2tu09GPe926aVCK8pX0MA1vIOB8i9awgs4nqC1ms_poQFqhE6cQ6KKzF7zp8TBzR7Cp9ChchQecIzPsF2bCewetbXx8-iH-1mKtem_Kf-iIUkhbxpiWf5CU';
+let artistToken = 'BQD8p2eeouoWc7RJtGXqo-RiEDmISSVAxL1FBYmg8ooc0nzpn1JKcKJSBHdLyMc8XOPuVcJEC_8qXU_fxicHoB4w3xDYRNtNH_wNS9k2jmrwUQ0ghO6W7Y53zZiRucxJ-wpprI2GYkVXqQokjjAK9HVclzfysaYM9FmteRKXFW16h5bH8nXKYnkx4z6ly1QwU6zH2JVWtvzIcJobGn8QF-xl03hVup3JrafCjYp6FptWhS4iBCciaRvyvzkDbtORMyw';
 let apiUrl = 'https://api.spotify.com/v1/search?q=';
 let search2 = '&type=artist';
 

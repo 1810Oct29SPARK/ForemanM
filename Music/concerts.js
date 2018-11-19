@@ -17,11 +17,11 @@ function searchForLyrics(){
             console.log(data.data.message.body.lyrics.lyrics_body);
             showLyrics();
 
-            function showLyrics() {
+            function showLyrics() { 
                 $('#lyric-data').append(`<pre>${data.data.message.body.lyrics.lyrics_body}</pre>`)
             }
-        });
+    });
 }
 
-
+ 
 
